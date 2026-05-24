@@ -74,6 +74,7 @@ def atualizar_pontos():
     global pontos
 
     print("----------------------------------------------")
+    print(f"Saldo atual de pontos: {pontos}")
     qtd_pontos = ler_inteiro("Digite a nova quantidade do saldo de pontos:\n")
 
     while qtd_pontos < 0:
@@ -121,7 +122,7 @@ def converter_bilhetes():
     print("\nFazendo o cálculo da conversão...")
     time.sleep(1.5)
     print(f"Pontos acumulados: {pontos}")
-    print(f"Conversão em bilhetes: {bilhetes}")
+    print(f"A sua quantidade de pontos acumulados equivale a: {bilhetes} bilhetes.")
 
     print("------------------------------------")
     historico.append("Consulta de bilhetes")
